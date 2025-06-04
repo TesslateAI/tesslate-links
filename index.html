@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesslate - Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papm6F4l+8Z8vZl5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/24a46ad6d7.js" crossorigin="anonymous"></script>
+    
+    <style>
+        :root {
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #f8f9fa;
+            --color-bg-tertiary: #f0f2f5;
+            --color-text-primary: #1f2937;
+            --color-text-secondary: #4b5563;
+            --color-text-muted: #6b7280;
+            --color-border-primary: #e5e7eb;
+            --color-accent-blue: #2563eb; 
+            --color-accent-purple: #7c3aed; 
+            --color-accent-pink: #db2777;
+            --color-accent-orange: #f97316;
+            --color-accent-green: #10b981; /* Added for Calendly or other links */
+            --color-accent-teal: #14b8a6; /* Added for HuggingFace or other links */
+
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Inter Tight', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg-secondary);
+            color: var(--color-text-primary);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+        }
+        .font-heading { font-family: var(--font-heading); }
+        .font-body { font-family: var(--font-body); }
+
+        .text-gradient-tesslate {
+            background-image: linear-gradient(105deg, var(--color-accent-blue) 0%, var(--color-accent-purple) 60%, var(--color-accent-pink) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .bg-pattern-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Custom scrollbar for a cleaner look (optional) */
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: #f1f1f1; }
+        body::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 4px; }
+        body::-webkit-scrollbar-thumb:hover { background: #a1a1a1; }
+
+        .link-card-icon-container {
+            transition: transform 0.3s ease-in-out;
+        }
+        .link-card:hover .link-card-icon-container {
+            transform: scale(1.1);
+        }
+
+        .book-meeting-hover:hover {
+            background-color: #5E62FF !important;
+            color: #fff !important;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-60 bg-pattern-overlay -z-10"></div>
+    
+    <div class="relative min-h-screen flex flex-col items-center justify-center px-2 sm:px-6 py-12">
+        
+        <header class="text-center mb-10 sm:mb-12 reveal-on-scroll is-visible">
+            <div class="mb-5">
+                 <!-- Replace with your actual tesslate.svg -->
+                <img src="tesslate2.png" alt="Tesslate Logo" class="h-20 w-auto mx-auto rounded-xl">
+                <!-- Fallback if tesslate.svg is not available or for a placeholder -->
+                <!-- 
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-white rounded-2xl shadow-xl shadow-black/10 p-2.5">
+                    <svg viewBox="0 0 24 24" class="h-full w-full object-contain text-gray-700" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M5 5h14v3h-5.5V19h-3V8H5V5z"/>
+                    </svg>
+                </div>
+                -->
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold font-heading text-gradient-tesslate mb-3">
+                Tesslate
+            </h1>
+            <p class="text-lg sm:text-xl text-[var(--color-text-secondary)] max-w-md mx-auto leading-relaxed mb-6">
+                Supercharge your product team
+            </p>
+            
+            <div class="mb-6 space-y-2 text-sm sm:text-base">
+                <div class="flex items-center justify-center space-x-2 text-[var(--color-text-primary)]">
+                    <i data-lucide="user" class="h-4 w-4 text-[var(--color-text-muted)]"></i>
+                    <span class="font-semibold">Manav Majumdar</span>
+                    <span class="text-[var(--color-text-muted)]">•</span>
+                    <span class="text-[var(--color-text-secondary)] text-xs sm:text-sm">Founder & CEO</span>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center sm:space-x-6 space-y-1 sm:space-y-0 text-xs sm:text-sm">
+                    <a 
+                        href="mailto:manav@tesslate.com"
+                        class="flex items-center space-x-1.5 text-[var(--color-text-secondary)] hover:text-[var(--color-accent-blue)] transition-colors group"
+                    >
+                        <i data-lucide="mail" class="h-4 w-4 group-hover:scale-110 transition-transform"></i>
+                        <span>manav@tesslate.com</span>
+                    </a>
+                    <a 
+                        href="tel:+19196375449"
+                        class="flex items-center space-x-1.5 text-[var(--color-text-secondary)] hover:text-[var(--color-accent-blue)] transition-colors group"
+                    >
+                        <i data-lucide="phone" class="h-4 w-4 group-hover:scale-110 transition-transform"></i>
+                        <span>(919) 637-5449</span>
+                    </a>
+                </div>
+            </div>
+          
+            <div class="flex justify-center">
+                <a href="https://calendly.com/team-tesslate" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-[var(--color-bg-tertiary)] text-[var(--color-text-primary)] text-xs sm:text-sm font-medium border border-[var(--color-border-primary)] transition-colors book-meeting-hover">
+                    <span class="mr-1.5">📅</span> Book a Meeting
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Links -->
+        <main class="w-full max-w-sm sm:max-w-md space-y-4 sm:space-y-5 mb-10 sm:mb-12 mx-auto">
+            
+            <a href="https://tesslate.com/" target="_blank" rel="noopener noreferrer"
+               class="link-card w-full block bg-white p-3 sm:p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 reveal-on-scroll"
+               style="animation-delay: 0.1s;">
+                <div class="flex items-center space-x-4">
+                    <div class="link-card-icon-container flex-shrink-0 h-10 w-10 sm:h-12 sm:w-12 rounded-lg bg-gradient-to-br from-[var(--color-accent-blue)] to-[var(--color-accent-purple)] flex items-center justify-center text-white">
+                        <i data-lucide="globe-2" class="h-5 w-5 sm:h-6 sm:w-6"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-sm sm:text-md font-semibold font-heading text-[var(--color-text-primary)]">Our Website</h3>
+                        <p class="text-xs text-[var(--color-text-secondary)] font-body">Explore our main platform</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <i data-lucide="arrow-up-right" class="h-4 w-4 sm:h-5 sm:w-5 text-[var(--color-text-muted)]"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://huggingface.co/Tesslate" target="_blank" rel="noopener noreferrer"
+               class="link-card w-full block bg-white p-3 sm:p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 reveal-on-scroll"
+               style="animation-delay: 0.2s;">
+                <div class="flex items-center space-x-4">
+                    <div class="link-card-icon-container flex-shrink-0 h-10 w-10 sm:h-12 sm:w-12 rounded-lg bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 flex items-center justify-center text-white">
+                        <i data-lucide="cpu" class="h-5 w-5 sm:h-6 sm:w-6"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-sm sm:text-md font-semibold font-heading text-[var(--color-text-primary)]">Hugging Face</h3>
+                        <p class="text-xs text-[var(--color-text-secondary)] font-body">Our models and datasets</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <i data-lucide="arrow-up-right" class="h-4 w-4 sm:h-5 sm:w-5 text-[var(--color-text-muted)]"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://discord.gg/59BHZcGuJz" target="_blank" rel="noopener noreferrer"
+               class="link-card w-full block bg-white p-3 sm:p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 reveal-on-scroll"
+               style="animation-delay: 0.3s;">
+                <div class="flex items-center space-x-4">
+                    <div class="link-card-icon-container flex-shrink-0 h-10 w-10 sm:h-12 sm:w-12 rounded-lg bg-gradient-to-br from-[var(--color-accent-purple)] to-indigo-500 flex items-center justify-center text-white">
+                        <i data-lucide="message-circle" class="h-5 w-5 sm:h-6 sm:w-6"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-sm sm:text-md font-semibold font-heading text-[var(--color-text-primary)]">Join Our Community</h3>
+                        <p class="text-xs text-[var(--color-text-secondary)] font-body">Connect on Discord</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <i data-lucide="arrow-up-right" class="h-4 w-4 sm:h-5 sm:w-5 text-[var(--color-text-muted)]"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://x.com/tesslateai" target="_blank" rel="noopener noreferrer"
+               class="link-card w-full block bg-white p-3 sm:p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 animate-fade-in"
+               style="animation-delay: 0.5s;">
+                <div class="flex items-center space-x-4">
+                    <div class="flex-shrink-0 h-10 w-10 sm:h-12 sm:w-12 rounded-lg bg-black flex items-center justify-center">
+                        <img src="xlogo.svg" alt="X Logo" class="h-5 w-5 sm:h-6 sm:w-6" />
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-sm sm:text-md font-semibold text-gray-900">Follow us on X</h3>
+                        <p class="text-xs sm:text-sm text-gray-600">Latest updates and news</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <i data-lucide="arrow-up-right" class="h-4 w-4 sm:h-5 sm:w-5 text-gray-400"></i>
+                    </div>
+                </div>
+            </a>
+        </main>
+
+        <!-- Small Icon Links -->
+        <section class="flex justify-center space-x-6 sm:space-x-8 reveal-on-scroll" style="animation-delay: 0.6s;">
+            <a href="https://uigeneval.tesslate.com/" target="_blank" rel="noopener noreferrer" title="uigeneval.tesslate.com" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-blue)] transition-colors transform hover:scale-110">
+                <i data-lucide="book-text" class="h-6 w-6 sm:h-7 sm:w-7"></i>
+            </a>
+            <a href="https://tframex.tesslate.com/" target="_blank" rel="noopener noreferrer" title="tframex.tesslate.com" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent-purple)] transition-colors transform hover:scale-110">
+                <i data-lucide="box" class="h-6 w-6 sm:h-7 sm:w-7"></i>
+            </a>
+            <a href="https://github.com/TesslateAI/" target="_blank" rel="noopener noreferrer" title="GitHub" class="text-[var(--color-text-muted)] hover:text-gray-900 transition-colors transform hover:scale-110">
+                <i data-lucide="github" class="h-6 w-6 sm:h-7 sm:w-7"></i>
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-10 sm:mt-12 text-center reveal-on-scroll" style="animation-delay: 0.7s;">
+            <p class="text-[var(--color-text-muted)] text-xs sm:text-sm font-body">
+                © 2025 Tesslate. Building the future with AI.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // Scroll-triggered animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+            
+            const observerCallback = (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            };
+
+            // Set a slightly lower threshold if you want animations to trigger earlier
+            const revealObserver = new IntersectionObserver(observerCallback, { threshold: 0.1 }); 
+            
+            revealElements.forEach(el => {
+                // If an element is already visible on load (e.g. header), make it visible immediately
+                // This check is simplified; for robust check, calculate actual viewport visibility
+                if (el.getBoundingClientRect().top < window.innerHeight && el.getBoundingClientRect().bottom > 0) {
+                     // el.classList.add('is-visible'); // This might be too aggressive for elements starting off-screen
+                }
+                revealObserver.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
